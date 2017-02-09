@@ -26,6 +26,13 @@ DVD.prototype = Object.create(Product.prototype, {
   constructor: {value: DVD}
 });
 
+function VideoGame(name, price, platform) {
+  Product.apply(this, [name, price]);
+  this.platform = platform;
+}
+VideoGame.prototype = Object.create(Product.prototype, {
+  constructor: {value: VideoGame}
+});
 
 module.exports = {
   Book: Book,
