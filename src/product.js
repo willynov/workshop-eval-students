@@ -36,5 +36,6 @@ VideoGame.prototype = Object.create(Product.prototype, {
 
 module.exports = {
   Book: Book,
-  DVD: DVD
+  DVD: DVD,
+  VideoGame: VideoGame
 };
