@@ -15,23 +15,48 @@ class Product {
 };
 
 class Book extends Product {
-    constructor(name, price, isbn){
+    constructor(name, price, isbn, minDuration, maxDuration){
       super(name, price);
       this.isbn = isbn;
+      this.minDuration;
+      this.maxDuration;
+      function getDuration() {
+        this.toString = function() {
+          var durationmin = this.minDuration;
+          var durationmax = this.maxDuration;
+          return super.toString() + ' duration between ${durationmin} and ${durationmax}';
+        }
+      }
   }
 };
 
 class DVD extends Product {
-    constructor(name, price, moovie){
+    constructor(name, price, moovie, runningTime){
       super(name, price);
       this.moovie = moovie;
+      this.runningTime;
+      function getDuration() {
+        this.toString = function() {
+          var runningTime = this.runningTime;
+          return super.toString() + ' duration: ${runningTime}';
+        }
+      }
   }
 };
 
 class VideoGame extends Product {
-    constructor(name, price, platform){
-      super(name, price);
+    constructor(name, price, platform, minDuration, maxDuration){
+      super(name, price, duration);
       this.platform = platform;
+      this.minDuration;
+      this.maxDuration;
+      function getDuration() {
+        this.toString = function() {
+          var durationmin = this.minDuration;
+          var durationmax = this.maxDuration;
+          return super.toString() + ' duration between ${durationmin} and ${durationmax}';
+        }
+      }
   }
 };
 

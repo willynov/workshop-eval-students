@@ -24,4 +24,12 @@ describe('Store', function() {
       store.products[10]])).to.be.equal(99.22);
   });
 
+  /* 
+  //pas eu le temps de terminer
+  it('to verify the duration of each type of product', function() {
+    expect(store.);
+  });
+  */
 });
+
+
